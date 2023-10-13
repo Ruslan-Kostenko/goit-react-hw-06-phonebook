@@ -1,7 +1,8 @@
-import { getFilter } from 'store/PhoneBook/filterSlice';
-import { ContactItem } from '../ContactItem/ContactItem';
-import { getContacts } from 'store/PhoneBook/phoneBookSlice';
 import { useSelector } from 'react-redux';
+import { getFilter } from 'store/PhoneBook/filterSlice';
+import { getContacts } from 'store/PhoneBook/phoneBookSlice';
+import { ContactItem } from '../ContactItem/ContactItem';
+
 
 export const ContactList = () => {
   const contacts = useSelector(getContacts);
